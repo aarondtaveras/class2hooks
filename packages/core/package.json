@@ -3,28 +3,25 @@
   "version": "0.0.1",
   "license": "MIT",
   "devDependencies": {
-    "@types/jest": "^24.0.12",
+    "@types/jest": "^24.0.11",
     "@types/jscodeshift": "^0.6.0",
-    "@types/lodash": "^4.14.123",
-    "@types/node": "^11.13.9",
-    "coveralls": "^3.0.3",
-    "jest": "^24.7.1",
-    "ts-jest": "^24.0.2",
-    "ts-node": "^8.1.0",
-    "ts-node-dev": "^1.0.0-pre.33",
-    "typescript": "^3.4.5"
+    "@types/lodash": "^4.14.121",
+    "@types/node": "^11.9.4",
+    "jest": "^24.3.1",
+    "ts-jest": "^24.0.0",
+    "ts-node": "^8.0.2",
+    "ts-node-dev": "^1.0.0-pre.32",
+    "typescript": "^3.3.3"
   },
   "scripts": {
     "test": "jest",
-    "dev": "yarn test --watch",
-    "coverage": "jest --coverage && cat coverage/lcov.info",
-    "coveralls": "jest --coverage --coverageReporters=text-lcov | coveralls"
+    "dev": "yarn test --watch"
   },
   "dependencies": {
-    "ast-types": "^0.12.4",
-    "jscodeshift": "^0.6.4",
+    "ast-types": "^0.12.2",
+    "jscodeshift": "^0.6.3",
     "jscodeshift-helper": "^1.1.0",
     "lodash": "^4.17.11",
-    "recast": "^0.17.6"
+    "recast": "^0.17.3"
   }
 }

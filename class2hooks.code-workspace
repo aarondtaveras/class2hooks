@@ -8,61 +8,7 @@
     }
   ],
   "settings": {
-    "prettier.eslintIntegration": true,
-    "eslint.autoFixOnSave": true,
-    "eslint.validate": [
-      // "javascript",
-      // "javascriptreact",
-      { "language": "typescript", "autoFix": true },
-      { "language": "typescriptreact", "autoFix": true }
-    ],
-
-    "editor.formatOnSave": true,
-    "[javascript]": {
-      "editor.formatOnSave": false
-    },
-    "[javascriptreact]": {
-      "editor.formatOnSave": false
-    },
-    "[typescript]": {
-      "editor.formatOnSave": false
-    },
-    "[typescriptreact]": {
-      "editor.formatOnSave": false
-    },
-    "cSpell.ignoreWords": [
-      "jscodeshift",
-      "refactorable",
-      "testfixtures",
-      "untransformable"
-    ],
-    "jest.rootPath": "packages/core",
-    "jest.autoEnable": true,
-    "jest.runAllTestsFirst": true,
-    "jest.enableCodeLens": false
-  },
-  "launch": {
-    "configurations": [
-      {
-        "type": "node",
-        "request": "launch",
-        "name": "Run Tests",
-        "cwd": "${workspaceFolder:core}",
-        "program": "${workspaceFolder:core}/node_modules/.bin/jest",
-        "args": [
-          "--watch",
-          "--config",
-          "${workspaceRoot:core}/jest.config.js",
-          "--runInBand"
-        ],
-        "console": "integratedTerminal",
-        "internalConsoleOptions": "neverOpen",
-        "disableOptimisticBPs": true,
-        "windows": {
-          "program": "${workspaceFolder:core}/node_modules/jest/bin/jest"
-        }
-      }
-    ],
-    "compounds": []
+    // "editor.formatOnSave": true,
+    "prettier.eslintIntegration": true
   }
 }

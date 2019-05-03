@@ -1,14 +1,14 @@
-import { ASTNode } from 'jscodeshift'
-import { Collection } from 'jscodeshift/src/Collection'
+import { ASTNode } from "jscodeshift"
+import { Collection } from "jscodeshift/src/Collection"
 
-import { IRuntimeOptions } from './types'
+import { RuntimeOptions } from "./types"
 import {
   hasComponentDidCatchMethod,
   hasGetDerivedStateFromErrorMethod,
   hasJSX,
   hasReact,
   hasReactES6Class
-} from './utils'
+} from "./utils"
 
 /**
  * Runs initial checks on file
@@ -17,8 +17,7 @@ import {
  */
 const runChecks = (
   root: Collection<ASTNode>,
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  options?: IRuntimeOptions
+  options?: RuntimeOptions
 ): boolean =>
   hasReact(root) &&
   hasReactES6Class(root) &&

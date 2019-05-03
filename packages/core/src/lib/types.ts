@@ -1,4 +1,4 @@
 import { Options } from "jscodeshift"
-export interface IRuntimeOptions extends Options {
+export interface RuntimeOptions extends Options {
   refactorState: boolean
 }
